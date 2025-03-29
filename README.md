@@ -1,2 +1,3 @@
 # WebCourse
-Web Course projects at BZU
+Web Course assigments at BZU
+
