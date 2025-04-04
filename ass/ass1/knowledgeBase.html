@@ -26,7 +26,7 @@
                 <ul>
                     <li><a href="/WebCourse/ass/ass1/">Assignment One</a></li>
                     <li><a href= "/WebCourse/ass/ass1/index.html" >Home</a></li>
-                    <li><a href="">Profile</a></li>
+                    <li><a href="/WebCourse/ass/ass1/profile.html">Profile</a></li>
                     <li><a href= "/WebCourse/ass/ass1/knowledgeBase.html">Knowledge Base</a></li>
                     <li><a href= "">File Sharing</a></li>
                     <li><a href= "">Contact Us</a></li>
@@ -40,44 +40,57 @@
 
     <main>
 
+        <h1>Knowledge Base</h1>
+        <br>
+
         <section>
             <h2>Hey! Wanna be part of the comunity and share knowledge? Upoload an atricle! <img src="/WebCourse/ass/ass1/Images/smile.png" alt="Smile Emoji" width="30" height="30"> </h2>
               <figure>
                 <img src= "Images/shareContent.gif" alt="a digital art of a person sharing content" width="500" height="350">
               </figure> 
-              <p><strong>Why Sharing Content is Important:</strong> Sharing your knowledge not only helps others grow but also keeps the community active, engaged, and constantly evolving.</p>
+              <p><strong>Why Sharing Content is Important:</strong> Sharing your knowledge not only helps others grow but 
+                also keeps the community active, engaged, and constantly evolving.<img src="/WebCourse/ass/ass1/Images/sparkle.png"
+                 alt="sparkle icon" width="30" height="30">
+              </p>
             </section>
 
             <hr>
 
    
         <section>
-            <h2>Submit an Article</h2>
+            <h2>Share an Article Now!</h2>
             <form action="http://yhassouneh.studentprojects.ritaj.ps/util/process.php" method="POST" enctype="multipart/form-data">
+
+                <fieldset>
+            
+                <legend>Article Details:</legend>
                 <label for="title">Title:</label>
                 <input type="text" id="title" name="title" required><br><br>
-
+            
                 <label for="description">Description:</label>
-                <textarea id="description" name="description" required></textarea><br><br>
-
+                <textarea id="description" name="description" cols="30" required></textarea><br><br>
+            
                 <label for="content">Article Content:</label>
                 <textarea id="content" name="content" rows="20" cols="60" required></textarea><br><br>
-
-
+            
                 <label for="image">Upload Image:</label>
                 <input type="file" id="image" name="image" accept="image/*"><br><br>
+            
+                <button type="submit">Share</button>
+                </fieldset>
 
-                <button type="submit">Submit</button>
             </form>
-        </section>
+            </section>
+            
 
         <hr>
 
         <section>
             <h2>Articles</h2>
             <ul>
-                <li><strong>How to create a form:</strong> in this article we will learn how to create a form using html.</li>
-                <li><strong>How to style with CSS:</strong>In this article we will learn how to style a web page with CSS.</li>
+                <li><a href="/WebCourse/ass/ass1/articles/article1.html"><strong>How to create a form:</strong></a> In this article, we will learn how to create a form using HTML.</li>
+                <li><a href="/WebCourse/ass/ass1/articles/article2.html"><strong>How to style with CSS:</strong></a> In this article, we will learn how to style a web page with CSS.</li>
+                
             </ul>
         </section>
 

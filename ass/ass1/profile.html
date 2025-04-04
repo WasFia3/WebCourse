@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+
+<body>
+    <header>
+        <figure>
+             <img src= "/WebCourse/ass/ass1/Images/logo.png" alt = "logo" width="110" height="110">
+            </figure>
+
+            <h1>DevHive</h1>
+
+            <nav>
+
+               <form action="search.html" method="GET">
+                <input type= "text" name="query" placeholder="search">
+                <button type="submit">Search</button>
+
+               </form>
+                
+                <ul>
+                    <li><a href="/WebCourse/ass/ass1/">Assignment One</a></li>
+                    <li><a href= "/WebCourse/ass/ass1/index.html" >Home</a></li>
+                    <li><a href="/WebCourse/ass/ass1/profile.html">Profile</a></li>
+                    <li><a href= "/WebCourse/ass/ass1/knowledgeBase.html">Knowledge Base</a></li>
+                    <li><a href= "">File Sharing</a></li>
+                    <li><a href= "">Contact Us</a></li>
+
+
+                </ul>
+            </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Profile Information</h2>
+            <img src="/WebCourse/ass/ass1/Images/user_image.jpg" alt="User's Profile Picture" width="150" height="150">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Bio:</strong> I am a web developer with a passion for creating interactive websites and learning new technologies.</p>
+        </section>
+
+        <section>
+            <h2>Update Profile</h2>
+            <form action="#" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" value="JohnDoe" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" value="johndoe@example.com" required><br><br>
+
+                <label for="bio">Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="50">I am a web developer with a passion for creating interactive websites and learning new technologies.</textarea><br><br>
+
+                <button type="submit">Update Profile</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Location: Birzeit University Street, Ramallah, Palestine</p>
+        <p>Contact Us: Phone: +9705957634 | Email: <a href="mailto:support@gmail.com">support@gmail.com</a></p>
+        &copy; 2025 All rights reserved.
+    </footer>
+</body>
+
+</html>
