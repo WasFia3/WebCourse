@@ -10,24 +10,32 @@
 <body>
     <header>
         <figure>
-            <img src="/WebCourse/ass/ass1/Images/logo.png" alt="logo" width="110" height="110">
+            <img src="Images/logo.png" alt="logo" width="110" height="110">
         </figure>
 
         <h1>DevHive</h1>
 
         <nav>
             <form action="search.html" method="GET">
-                <input type="text" name="query" placeholder="search">
+                <input type="text" name="query" placeholder="Search..." required>
+            
+                <br>
+            
+                <label><input type="radio" name="search_type" value="topics" checked> Topics</label>
+                <label><input type="radio" name="search_type" value="articles"> Articles</label>
+                <label><input type="radio" name="search_type" value="members"> Members</label>
+            
+                <br><br>
                 <button type="submit">Search</button>
             </form>
-
+            
             <ul>
-                <li><a href="/WebCourse/ass/ass1/">Assignment One</a></li>
-                <li><a href="/WebCourse/ass/ass1/index.html">Home</a></li>
-                <li><a href="/WebCourse/ass/ass1/profile.html">Profile</a></li>
-                <li><a href="/WebCourse/ass/ass1/knowledgeBase.html">Knowledge Base</a></li>
-                <li><a href="/WebCourse/ass/ass1/fileSharing.html">File Sharing</a></li>
-                <li><a href="/WebCourse/ass/ass1/contactUs.html">Contact Us</a></li>
+                <li><a href="../">Assignment One</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="knowledgeBase.html">Knowledge Base</a></li>
+                <li><a href="fileSharing.html">File Sharing</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -36,8 +44,8 @@
 
     <main>
         <section>
-            <h2><img src="/WebCourse/ass/ass1/Images/profileInfo.png" alt="profile info icon" width="30" height="30"> Profile Information</h2>
-            <img src="/WebCourse/ass/ass1/Images/profile.jpg" alt="profile picture of wasfia_3" width="200" height="150">
+            <h2><img src="Images/profileInfo.png" alt="profile info icon" width="30" height="30"> Profile Information</h2>
+            <img src="Images/profile.jpg" alt="profile picture of wasfia_3" width="200" height="150">
             <p><strong>Name:</strong> WasFia</p>
             <p><strong>Email:</strong> wasfia@gmail.com</p>
             <p><strong>Bio:</strong> Interested in web development and learning HTML right now.</p>
@@ -47,7 +55,7 @@
         <hr>
 
         <section>
-            <h2><img src="/WebCourse/ass/ass1/Images/editProfile.png" alt="edit profile icon" height="30" width="30"> Edit Profile</h2>
+            <h2><img src="Images/editProfile.png" alt="edit profile icon" height="30" width="30"> Edit Profile</h2>
             <form method="POST" action="http://yhassouneh.studentprojects.ritaj.ps/util/process.php">
                 <fieldset>
                     <legend>Edit Details</legend>
@@ -82,12 +90,9 @@
     <footer> 
         <address>
             <p><strong>Location:</strong> Birzeit university street, Ramallah, Palestine</p>
-            <p><strong>Contact Us:</strong> Phone Number: +9705957634 | Email: <a href="mailto:support@gmail.com">support@gmail.com</a>
-
+            <p><strong>Contact Us:</strong> Phone Number: +9705957634 | Email: <a href="mailto:support@gmail.com">support@gmail.com</a></p>
         </address>
         &copy 2025 All rights reserved
-
-
     </footer>
 </body>
 

@@ -10,30 +10,35 @@
 <body>
     <header>
         <figure>
-             <img src= "/WebCourse/ass/ass1/Images/logo.png" alt = "logo" width="110" height="110">
-            </figure>
+            <img src="Images/logo.png" alt="logo" width="110" height="110">
+        </figure>
 
-            <h1>DevHive</h1>
+        <h1>DevHive</h1>
 
-            <nav>
+        <nav>
 
-               <form action="search.html" method="GET">
-                <input type= "text" name="query" placeholder="search">
-                <button type="submit">Search</button>
-
-               </form>
+            <form action="search.html" method="GET">
+                <input type="text" name="query" placeholder="Search..." required>
                 
-                <ul>
-                    <li><a href="/WebCourse/ass/ass1/">Assignment One</a></li>
-                    <li><a href= "/WebCourse/ass/ass1/index.html" >Home</a></li>
-                    <li><a href="/WebCourse/ass/ass1/profile.html">Profile</a></li>
-                    <li><a href= "/WebCourse/ass/ass1/knowledgeBase.html">Knowledge Base</a></li>
-                    <li><a href= "/WebCourse/ass/ass1/fileSharing.html">File Sharing</a></li>
-                    <li><a href= "/WebCourse/ass/ass1/contactUs.html">Contact Us</a></li>
-
-
-                </ul>
-            </nav>
+                <br>
+                
+                <label><input type="radio" name="search_type" value="topics" checked> Topics</label>
+                <label><input type="radio" name="search_type" value="articles"> Articles</label>
+                <label><input type="radio" name="search_type" value="members"> Members</label>
+                
+                <br><br>
+                <button type="submit">Search</button>
+            </form>
+            
+            <ul>
+                <li><a href="../">Assignment One</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="knowledgeBase.html">Knowledge Base</a></li>
+                <li><a href="fileSharing.html">File Sharing</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <hr>
@@ -44,21 +49,20 @@
         <br>
 
         <section>
-            <h3>Hey! Wanna be part of the comunity and share knowledge? Upoload an atricle! <img src="/WebCourse/ass/ass1/Images/smile.png" alt="Smile Emoji" width="20" height="20"> </h3>
+            <h3>Hey! Wanna be part of the community and share knowledge? Upload an article! <img src="Images/smile.png" alt="Smile Emoji" width="20" height="20"> </h3>
               <figure>
-                <img src= "Images/shareContent.gif" alt="a digital art of a person sharing content" width="500" height="350">
+                <img src="Images/shareContent.gif" alt="a digital art of a person sharing content" width="500" height="350">
               </figure> 
               <p><strong>Why Sharing Content is Important?</strong> Sharing your knowledge not only helps others grow but 
-                also keeps the community active, engaged, and constantly evolving.<img src="/WebCourse/ass/ass1/Images/sparkle.png"
+                also keeps the community active, engaged, and constantly evolving.<img src="Images/sparkle.png"
                  alt="sparkle icon" width="30" height="30">
               </p>
-            </section>
+        </section>
 
-            <hr>
+        <hr>
 
-   
         <section>
-            <h2>Share an Article Now!<img src="/WebCourse/ass/ass1/Images/arrowDown.gif" alt= "arrow_down" width="40" height="50"></h2>
+            <h2>Share an Article Now!<img src="Images/arrowDown.gif" alt="arrow_down" width="40" height="50"></h2>
             <form action="http://yhassouneh.studentprojects.ritaj.ps/util/process.php" method="POST" enctype="multipart/form-data">
 
                 <fieldset>
@@ -80,7 +84,7 @@
                 </fieldset>
 
             </form>
-            </section>
+        </section>
             
 
         <hr>
@@ -88,9 +92,8 @@
         <section>
             <h2>Articles</h2>
             <ul>
-                <li><a href="/WebCourse/ass/ass1/articles/article1.html"><strong>How to create a form:</strong></a> In this article, we will learn how to create a form using HTML.</li>
-                <li><a href="/WebCourse/ass/ass1/articles/article2.html"><strong>How to style with CSS:</strong></a> In this article, we will learn how to style a web page with CSS.</li>
-                
+                <li><a href="articles/article1.html"><strong>How to create a form:</strong></a> In this article, we will learn how to create a form using HTML.</li>
+                <li><a href="articles/article2.html"><strong>How to style with CSS:</strong></a> In this article, we will learn how to style a web page with CSS.</li>
             </ul>
         </section>
 
@@ -100,12 +103,9 @@
     <footer> 
         <address>
             <p><strong>Location:</strong> Birzeit university street, Ramallah, Palestine</p>
-            <p><strong>Contact Us:</strong> Phone Number: +9705957634 | Email: <a href="mailto:support@gmail.com">support@gmail.com</a>
-
+            <p><strong>Contact Us:</strong> Phone Number: +9705957634 | Email: <a href="mailto:support@gmail.com">support@gmail.com</a></p>
         </address>
         &copy 2025 All rights reserved
-
-
     </footer>
 
 </body>
