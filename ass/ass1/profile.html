@@ -10,58 +10,73 @@
 <body>
     <header>
         <figure>
-             <img src= "/WebCourse/ass/ass1/Images/logo.png" alt = "logo" width="110" height="110">
-            </figure>
+            <img src="/WebCourse/ass/ass1/Images/logo.png" alt="logo" width="110" height="110">
+        </figure>
 
-            <h1>DevHive</h1>
+        <h1>DevHive</h1>
 
-            <nav>
-
-               <form action="search.html" method="GET">
-                <input type= "text" name="query" placeholder="search">
+        <nav>
+            <form action="search.html" method="GET">
+                <input type="text" name="query" placeholder="search">
                 <button type="submit">Search</button>
+            </form>
 
-               </form>
-                
-                <ul>
-                    <li><a href="/WebCourse/ass/ass1/">Assignment One</a></li>
-                    <li><a href= "/WebCourse/ass/ass1/index.html" >Home</a></li>
-                    <li><a href="/WebCourse/ass/ass1/profile.html">Profile</a></li>
-                    <li><a href= "/WebCourse/ass/ass1/knowledgeBase.html">Knowledge Base</a></li>
-                    <li><a href= "">File Sharing</a></li>
-                    <li><a href= "">Contact Us</a></li>
-
-
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="/WebCourse/ass/ass1/">Assignment One</a></li>
+                <li><a href="/WebCourse/ass/ass1/index.html">Home</a></li>
+                <li><a href="/WebCourse/ass/ass1/profile.html">Profile</a></li>
+                <li><a href="/WebCourse/ass/ass1/knowledgeBase.html">Knowledge Base</a></li>
+                <li><a href="#">File Sharing</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <hr>
 
     <main>
         <section>
-            <h2>Profile Information</h2>
-            <img src="/WebCourse/ass/ass1/Images/user_image.jpg" alt="User's Profile Picture" width="150" height="150">
-            <p><strong>Name:</strong> John Doe</p>
-            <p><strong>Email:</strong> johndoe@example.com</p>
-            <p><strong>Bio:</strong> I am a web developer with a passion for creating interactive websites and learning new technologies.</p>
+            <h2><img src="/WebCourse/ass/ass1/Images/profileInfo.png" alt="profile info icon" width="30" height="30"> Profile Information</h2>
+            <img src="/WebCourse/ass/ass1/Images/profile.jpg" alt="profile picture of wasfia_3" width="200" height="150">
+            <p><strong>Name:</strong> WasFia</p>
+            <p><strong>Email:</strong> wasfia@gmail.com</p>
+            <p><strong>Bio:</strong> Interested in web development and learning HTML right now.</p>
+            <p><strong>Fun Fact About Me:</strong> I like cats.</p>
         </section>
+
+        <hr>
 
         <section>
-            <h2>Update Profile</h2>
-            <form action="#" method="POST">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" value="JohnDoe" required><br><br>
+            <h2><img src="/WebCourse/ass/ass1/Images/editProfile.png" alt="edit profile icon" height="30" width="30"> Edit Profile</h2>
+            <form method="POST" action="#">
+                <fieldset>
+                    <legend>Edit Details</legend>
+                    <label for="username"><strong>Username</strong></label>
+                    <input type="text" id="username" name="username" value="wasfia_3" />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" value="johndoe@example.com" required><br><br>
+                    <p>
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" id="email" name="email" value="wasfia@gmail.com" />
+                    </p>
 
-                <label for="bio">Bio:</label><br>
-                <textarea id="bio" name="bio" rows="4" cols="50">I am a web developer with a passion for creating interactive websites and learning new technologies.</textarea><br><br>
+                    <p>
+                        <label for="bio"><strong>Bio</strong></label>
+                        <textarea id="bio" name="bio" rows="4" cols="50">Interested in web development and learning HTML right now.</textarea>
+                    </p>
 
-                <button type="submit">Update Profile</button>
+                    <p>
+                        <label for="fun_fact_about_me"><strong>Fun fact about me</strong></label>
+                        <textarea id="fun_fact_about_me" name="fun_fact_about_me" rows="3" cols="50">I like cats.</textarea>
+                    </p>
+
+                    <button type="submit" id="submit">Confirm</button>
+                </fieldset>
             </form>
         </section>
+
+        <br>
+        <hr>
+
     </main>
 
     <footer>
