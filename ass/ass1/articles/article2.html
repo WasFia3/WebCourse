@@ -11,56 +11,58 @@
 
     <header>
         <figure>
-             <img src= "/WebCourse/ass/ass1/Images/logo.png" alt = "logo" width="110" height="110">
-            </figure>
+            <img src="../Images/logo.png" alt="logo" width="110" height="110">
+        </figure>
 
-            <h1>DevHive</h1>
+        <h1>DevHive</h1>
 
-            <nav>
+        <nav>
 
-               <form action="search.html" method="GET">
-                <input type= "text" name="query" placeholder="search">
+            <form action="search.html" method="GET">
+                <input type="text" name="query" placeholder="Search..." required>
+                <br>
+                <label><input type="radio" name="search_type" value="topics" checked> Topics</label>
+                <label><input type="radio" name="search_type" value="articles"> Articles</label>
+                <label><input type="radio" name="search_type" value="members"> Members</label>
+                <br><br>
                 <button type="submit">Search</button>
-
-               </form>
-                
-                <ul>
-                    <li><a href="/WebCourse/ass/ass1/">Assignment One</a></li>
-                    <li><a href= "/WebCourse/ass/ass1/index.html" >Home</a></li>
-                    <li><a href="">Profile</a></li>
-                    <li><a href= "/WebCourse/ass/ass1/knowledgeBase.html">Knowledge Base</a></li>
-                    <li><a href= "">File Sharing</a></li>
-                    <li><a href= "">Contact Us</a></li>
-
-
-                </ul>
-            </nav>
+            </form>
+            
+            <ul>
+                <li><a href="../">Assignment One</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../profile.html">Profile</a></li>
+                <li><a href="../knowledgeBase.html">Knowledge Base</a></li>
+                <li><a href="../fileSharing.html">File Sharing</a></li>
+                <li><a href="../contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
     <hr>
     <main>
-    <section>
-    <h1>How to style in CSS</h1>
-    <p>
-        CSS (Cascading Style Sheets) is used to style HTML elements by defining properties like color,
-         size, layout, and positioning. It allows you to separate content from design, making your web pages visually
-          appealing and more maintainable. With CSS,
-         you can customize the appearance of text, images, and other elements to create a better user experience.
-    </p>
+        <section>
+            <h1>How to style in CSS</h1>
+            <p>
+                CSS (Cascading Style Sheets) is used to style HTML elements by defining properties like color,
+                size, layout, and positioning. It allows you to separate content from design, making your web pages visually
+                appealing and more maintainable. With CSS,
+                you can customize the appearance of text, images, and other elements to create a better user experience.
+            </p>
         </section>
 
     </main>
 
+    <hr>
+
+    <footer>
+        <address>
+            <p>Location: Birzeit University Street, Ramallah, Palestine</p>
+            <p>Contact Us: Phone: +9705957634 | Email: <a href="mailto:support@gmail.com">support@gmail.com</a></p>
+        </address>
+        &copy; 2025 All rights reserved.
+    </footer>
+
 </body>
-
-<hr>
-
-<footer>
-    <address>
-        <p>Location: Birzeit University Street, Ramallah, Palestine</p>
-        <p>Contact Us: Phone: +9705957634 | Email: <a href="mailto:support@gmail.com">support@gmail.com</a></p>
-    </address>
-    &copy; 2025 All rights reserved.
-</footer>
 
 </html>
