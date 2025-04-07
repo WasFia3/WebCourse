@@ -3,51 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
+    <title>DevHive- Search</title>
 </head>
 
-<header>
-    <figure>
-        <img src="Images/logo.png" alt="logo" width="110" height="110">
-    </figure>
+<body> 
 
-    <h1>DevHive</h1>
+    <header>
+        <figure>
+            <img src="Images/logo.png" alt="logo" width="110" height="110">
+        </figure>
 
-    <nav>
-        <ul>
-            <li><a href="index.html"><img src="icons/home.png" alt="home_icon" width="30" height="30"> Home</a></li>
-            <li><a href="Profile.html"><img src="icons/profile.png" alt="profile_icon" width="25" height="25"> Profile</a></li>
-            <li><a href="knowledgeBase.html"><img src="icons/knowledge.png" alt="knowledgebase_icon" width="25" height="25"> Knowledge Base</a></li>
-            <li><a href="fileSharing.html"><img src="icons/file.png" alt="file_sharing_icon" width="25" height="25"> File Sharing</a></li>
-            <li><a href="search.html"><img src="icons/search.png" alt="search_icon" width="25" height="25"> Search</a></li>
-            <li><a href="contactUs.html"><img src="icons/contact.png" alt="contact_us_icon" width="25" height="25"> Contact Us</a></li>
-        </ul>
-    </nav>
-</header>
+        <h1>DevHive</h1>
 
+        <nav>
+            <ul>
+                <li><a href="index.html"><img src="icons/home.png" alt="home_icon" width="30" height="30"> Home</a></li>
+                <li><a href="profile.html"><img src="icons/profile.png" alt="profile_icon" width="25" height="25"> Profile</a></li>
+                <li><a href="knowledgeBase.html"><img src="icons/knowledge.png" alt="knowledgebase_icon" width="25" height="25"> Knowledge Base</a></li>
+                <li><a href="fileSharing.html"><img src="icons/file.png" alt="file_sharing_icon" width="25" height="25"> File Sharing</a></li>
+                <li><a href="search.html"><img src="icons/search.png" alt="search_icon" width="25" height="25"> Search</a></li>
+                <li><a href="contactUs.html"><img src="icons/contact.png" alt="contact_us_icon" width="25" height="25"> Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <hr>
 
-<body>
+    <main>
+        <section>
+            <h2>Search</h2>
+            <p>Welcome to the search page where you can look for whatever you want!</p>
+            <figure>
+                <img src="Images/search.gif" alt="searching_drawing" width="350" height="250">
+            </figure>
+        </section>
 
-    <h1>Search</h1>
+        <hr>
 
-    <p>Use the search bar to find topics, articles, or members:</p>
+        <section>
+            <h3>Use the search bar to find topics, articles, or members:</h3>
 
-    <form action="search.html" method="GET">
-        <input type="text" name="query" placeholder="Search..." required>
-        <br>
-        <label>
-            <input type="radio" name="search_type" value="topics" checked> Topics
-        </label>
-        <label>
-            <input type="radio" name="search_type" value="articles"> Articles
-        </label>
-        <label>
-            <input type="radio" name="search_type" value="members"> Members
-        </label>
-        <br><br>
-        <button type="submit">Search</button>
-    </form>
+            <form action="http://yhassouneh.studentprojects.ritaj.ps/util/process.php" method="POST">
+                <label for="query">Search:</label>
+                <input type="text" id="query" name="query" placeholder="Search..." required>
+                <br><br>
+
+                <fieldset>
+                    <legend>Search Type:</legend>
+                    <label>
+                        <input type="radio" name="search_type" value="topics" checked> Topics
+                    </label>
+                    <label>
+                        <input type="radio" name="search_type" value="articles"> Articles
+                    </label>
+                    <label>
+                        <input type="radio" name="search_type" value="members"> Members
+                    </label>
+                </fieldset>
+
+                <br>
+                <button type="submit">Search</button>
+            </form>
+
+        </section>
+    </main>
+
+    <br>
+    <hr>
 
     <footer> 
         <address>
@@ -57,8 +79,5 @@
         &copy; 2025 DevHive All rights reserved.
     </footer>
 
-</body>
-
-
-
+</body> 
 </html>
